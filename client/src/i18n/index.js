@@ -1,0 +1,86 @@
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+
+const resources = {
+  en: {
+    translation: {
+      welcome: 'Welcome back',
+      submitIdea: 'Submit Your Idea',
+      ideaPlaceholder: 'Describe your startup idea in detail...',
+      analyze: 'Analyze Idea',
+      analyzing: 'Analyzing...',
+      overallRating: 'Overall Rating',
+      innovationScore: 'Innovation Score',
+      marketScore: 'Market Score',
+      feasibility: 'Feasibility',
+      similarCompanies: 'Similar Companies',
+      featuresToAdd: 'Features to Add',
+      featuresToRemove: 'Features to Remove',
+      newTech: 'New Technologies',
+      swotAnalysis: 'SWOT Analysis',
+      marketTrends: 'Market Trends',
+      competitorComparison: 'Competitor Comparison',
+      keyHighlights: 'Key Highlights',
+      logout: 'Logout',
+      myIdeas: 'My Ideas',
+      dashboard: 'Dashboard',
+    },
+  },
+  hi: {
+    translation: {
+      welcome: 'वापस स्वागत है',
+      submitIdea: 'अपना विचार सबमिट करें',
+      ideaPlaceholder: 'अपने स्टार्टअप विचार का विस्तार से वर्णन करें...',
+      analyze: 'विचार विश्लेषण करें',
+      analyzing: 'विश्लेषण हो रहा है...',
+      overallRating: 'समग्र रेटिंग',
+      innovationScore: 'नवाचार स्कोर',
+      marketScore: 'बाजार स्कोर',
+      feasibility: 'व्यवहार्यता',
+      similarCompanies: 'समान कंपनियां',
+      featuresToAdd: 'जोड़ने योग्य फीचर',
+      featuresToRemove: 'हटाने योग्य फीचर',
+      newTech: 'नई तकनीकें',
+      swotAnalysis: 'SWOT विश्लेषण',
+      marketTrends: 'बाजार रुझान',
+      competitorComparison: 'प्रतिस्पर्धी तुलना',
+      keyHighlights: 'मुख्य बिंदु',
+      logout: 'लॉगआउट',
+      myIdeas: 'मेरे विचार',
+      dashboard: 'डैशबोर्ड',
+    },
+  },
+  es: {
+    translation: {
+      welcome: 'Bienvenido de nuevo',
+      submitIdea: 'Envía tu idea',
+      ideaPlaceholder: 'Describe tu idea de startup en detalle...',
+      analyze: 'Analizar idea',
+      analyzing: 'Analizando...',
+      overallRating: 'Calificación general',
+      innovationScore: 'Puntuación de innovación',
+      marketScore: 'Puntuación de mercado',
+      feasibility: 'Factibilidad',
+      similarCompanies: 'Empresas similares',
+      featuresToAdd: 'Características a agregar',
+      featuresToRemove: 'Características a eliminar',
+      newTech: 'Nuevas tecnologías',
+      swotAnalysis: 'Análisis SWOT',
+      marketTrends: 'Tendencias del mercado',
+      competitorComparison: 'Comparación de competidores',
+      keyHighlights: 'Puntos clave',
+      logout: 'Cerrar sesión',
+      myIdeas: 'Mis ideas',
+      dashboard: 'Panel',
+    },
+  },
+};
+
+i18n.use(initReactI18next).init({
+  resources,
+  lng: 'en',
+  fallbackLng: 'en',
+  interpolation: { escapeValue: false },
+});
+
+export default i18n;
